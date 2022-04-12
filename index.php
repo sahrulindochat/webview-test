@@ -41,8 +41,8 @@ document.addEventListener("message", function(result) {
 	var password = resultData.password
 	// alert(username+' - '+password)
 
-	document.getElementById("username").val(username);
-	document.getElementById("password").val(password);
+	document.getElementById("username").value = username;
+	document.getElementById("password").value = password;
 	document.getElementById("formLogin").submit();
 })
 </script>
