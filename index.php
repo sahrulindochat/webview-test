@@ -35,7 +35,7 @@ if (isset($_SESSION['loggedin'])) {
 </html>
 <script>
 document.addEventListener("message", function(data) {
-	alert(JSON.stringify(data.data))
+	alert(JSON.stringify(data.data[0]))
     var username = data.data.username
 	var password = data.data.password
 	// alert(username+' - '+password)
