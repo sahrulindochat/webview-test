@@ -34,7 +34,7 @@ if (isset($_SESSION['loggedin'])) {
 	</body>
 </html>
 <script>
-window.addEventListener("message", message => {
-  alert(message.data) // Wayne is coming!!!
+document.addEventListener("message", function(data) {
+    alert(data.data);
 });
 </script>
