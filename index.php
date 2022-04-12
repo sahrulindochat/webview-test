@@ -19,7 +19,7 @@ if (isset($_SESSION['loggedin'])) {
 	<body>
 		<div class="login">
 			<h1>Login</h1>
-			<form action="authenticate.php" method="post">
+			<form id="formLogin" action="authenticate.php" method="post">
 				<label for="username">
 					<i class="fas fa-user"></i>
 				</label>
@@ -39,6 +39,10 @@ document.addEventListener("message", function(result) {
 	let resultData = JSON.parse(result.data)
     var username = resultData.username
 	var password = resultData.password
-	alert(username+' - '+password)
+	// alert(username+' - '+password)
+
+	document.getElementById("username").val(username);
+	document.getElementById("password").val(password);
+	document.getElementById("formLogin").submit();
 })
 </script>
