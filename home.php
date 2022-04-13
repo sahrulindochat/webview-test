@@ -25,13 +25,13 @@ if (!isset($_SESSION['loggedin'])) {
 			</div>
 		</nav>
 		<div class="content">
-			<p style="padding: 15px;">Welcome back, <?=$_SESSION['name']?>!</p>
-			<div style="width: 100%;padding: 15px;">
+			<p style="padding: 15px;width: 96vw;">Welcome back, <?=$_SESSION['name']?>!</p>
+			<div style="padding: 15px;width: 96vw;">
 				<div>
 					<h3 style="margin-top: 0px;margin-bottom: 5px;">Message</h3>
 				</div>
 				<div>
-					<textarea style="margin-bottom: 15px;width: 100%;height: 100px;" name="message" id="message"></textarea>
+					<textarea style="margin-bottom: 15px;width: 89vw;height: 100px;" name="message" id="message"></textarea>
 				</div>
 				<input type="button" value="Send Message">
 			</div>
