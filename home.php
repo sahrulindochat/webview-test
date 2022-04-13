@@ -31,10 +31,11 @@ if (!isset($_SESSION['loggedin'])) {
 			<div id="login">
 				<form id="formLogin" action="authenticate.php" method="post">
 					<div class="form-control">
-						<h3 style="margin-top: 0px;">Message</h3>
+						<h3 style="margin-top: 0px;margin-bottom: 5px;">Message</h3>
 					</div>
 					<div class="form-control">
-						<textarea style="margin-bottom: 10px;width: 100%;" name="message" id="message" cols="30" rows="10"></textarea>
+						<textarea style="margin-bottom: 15px;width: 100%;" name="message" id="message" rows="5">
+						</textarea>
 					</div>
 					<input type="button" value="Send Message">
 				</form>
