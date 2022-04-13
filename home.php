@@ -26,17 +26,13 @@ if (!isset($_SESSION['loggedin'])) {
 		</nav>
 		<div class="content">
 			<p>Welcome back, <?=$_SESSION['name']?>!</p>
-			<div id="login">
-				<form id="formLogin" action="authenticate.php" method="post">
-					<div class="form-control">
-						<h3 style="margin-top: 0px;margin-bottom: 5px;">Message</h3>
-					</div>
-					<div class="form-control">
-						<textarea style="margin-bottom: 15px;width: 100%;height: 100px;" name="message" id="message"></textarea>
-					</div>
-					<input type="button" value="Send Message">
-				</form>
+			<div style="width: 100%;">
+				<h3 style="margin-top: 0px;margin-bottom: 5px;">Message</h3>
 			</div>
+			<div style="width: 100%;">
+				<textarea style="margin-bottom: 15px;width: 100%;height: 100px;" name="message" id="message"></textarea>
+			</div>
+			<input type="button" value="Send Message">
 		</div>
 	</body>
 </html>
