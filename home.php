@@ -28,10 +28,17 @@ if (!isset($_SESSION['loggedin'])) {
 			<h2>Home Page</h2>
 			<p>Welcome back, <?=$_SESSION['name']?>!</p>
 
-			<h3>Message</h3>
-			<textarea name="message" id="message" cols="30" rows="10"></textarea>
-			<button>Send Message</button>
-			<input type="button" value="Send Message">
+			<div id="login">
+				<form id="formLogin" action="authenticate.php" method="post">
+					<div class="form-control">
+						<h3>Message</h3>
+					</div>
+					<div class="form-control">
+						<textarea name="message" id="message" cols="30" rows="10"></textarea>
+					</div>
+					<input type="button" value="Send Message">
+				</form>
+			</div>
 		</div>
 	</body>
 </html>
