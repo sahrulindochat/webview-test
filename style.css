@@ -67,7 +67,7 @@ body {
 .navtop div {
 	display: flex;
 	margin: 0 auto;
-	width: 1000px;
+	width: 100%;
 	height: 100%;
 }
 .navtop div h1, .navtop div a {
@@ -98,7 +98,7 @@ body.loggedin {
 	background-color: #f3f4f7;
 }
 .content {
-	width: 1000px;
+	width: 100%;
 	margin: 0 auto;
 }
 .content h2 {
