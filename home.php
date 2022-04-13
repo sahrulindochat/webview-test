@@ -18,8 +18,8 @@ if (!isset($_SESSION['loggedin'])) {
 	</head>
 	<body class="loggedin">
 		<nav class="navtop">
-			<div>
-				<h1 style="padding-left: 15px;">Homepage</h1>
+			<div style="padding: 10px;">
+				<h1>Homepage</h1>
 				<a href="profile.php"><i class="fas fa-user-circle"></i>Profile</a>
 				<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
 			</div>
