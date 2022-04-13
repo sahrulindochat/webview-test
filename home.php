@@ -43,7 +43,7 @@ document.addEventListener("message", function(result) {
 	let resultData = JSON.parse(result.data)
 	let resultData = JSON.parse(result.data)
 	if(resultData.type == 'message'){
-		document.getElementById("message").value = resultData.message;
+		document.getElementById("message").innerHTML = resultData.message;
 	}
 })
 </script>
