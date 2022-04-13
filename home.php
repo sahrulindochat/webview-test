@@ -31,7 +31,7 @@ if (!isset($_SESSION['loggedin'])) {
 					<h3 style="margin-top: 0px;margin-bottom: 5px;">Message</h3>
 				</div>
 				<div>
-					<textarea style="margin-bottom: 15px;width: 89vw;height: 100px;" name="message" id="message"></textarea>
+					<input style="margin-bottom: 15px;width: 89vw;height: 100px;" name="message" id="message" />
 				</div>
 				<input type="button" value="Send Message">
 			</div>
@@ -41,9 +41,9 @@ if (!isset($_SESSION['loggedin'])) {
 <script>
 document.addEventListener("message", function(result) {
 	let resultData = JSON.parse(result.data)
-	alert(resultData.type)
+	// alert(resultData.type)
 	if(resultData.type == 'message'){
-		document.getElementById("message").innerHTML = resultData.message;
+		document.getElementById("message").value = resultData.message;
 	}
 })
 </script>
