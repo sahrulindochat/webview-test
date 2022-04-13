@@ -49,6 +49,7 @@ document.addEventListener("message", function(result) {
 function postData(){
 	let message = document.getElementById("message").value;
 	window.postMessage(message);
+	window.ReactNativeWebView.postMessage(message);
 	alert(message);
 }
 </script>
