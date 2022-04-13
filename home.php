@@ -41,7 +41,7 @@ if (!isset($_SESSION['loggedin'])) {
 <script>
 document.addEventListener("message", function(result) {
 	let resultData = JSON.parse(result.data)
-	alert(resultData)
+	alert(resultData.type)
 	if(resultData.type == 'message'){
 		document.getElementById("message").innerHTML = resultData.message;
 	}
