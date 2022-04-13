@@ -25,8 +25,8 @@ if (!isset($_SESSION['loggedin'])) {
 			</div>
 		</nav>
 		<div class="content">
-			<p>Welcome back, <?=$_SESSION['name']?>!</p>
-			<div style="width: 100%;">
+			<p style="padding: 15px;">Welcome back, <?=$_SESSION['name']?>!</p>
+			<div style="width: 100%;padding: 15px;">
 				<div>
 					<h3 style="margin-top: 0px;margin-bottom: 5px;">Message</h3>
 				</div>
