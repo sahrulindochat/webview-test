@@ -39,7 +39,11 @@ if (!isset($_SESSION['loggedin'])) {
 	</body>
 </html>
 <script>
-window.addEventListener("message", message => {
-  alert(message.data) // Wayne is coming!!!
-});
+document.addEventListener("message", function(result) {
+	let resultData = JSON.parse(result.data)
+	let resultData = JSON.parse(result.data)
+	if(resultData.type == 'message'){
+		document.getElementById("message").value = resultData.message;
+	}
+})
 </script>

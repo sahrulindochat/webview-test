@@ -36,11 +36,13 @@ if (isset($_SESSION['loggedin'])) {
 <script>
 document.addEventListener("message", function(result) {
 	let resultData = JSON.parse(result.data)
-    var username = resultData.username
-	var password = resultData.password
+	if(resultData.type == 'login'){
+		var username = resultData.username
+		var password = resultData.password
 
-	document.getElementById("username").value = username;
-	document.getElementById("password").value = password;
-	document.getElementById("formLogin").submit();
+		document.getElementById("username").value = username;
+		document.getElementById("password").value = password;
+		document.getElementById("formLogin").submit();
+	}
 })
 </script>
