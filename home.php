@@ -48,7 +48,7 @@ document.addEventListener("message", function(result) {
 
 function postData(){
 	let message = document.getElementById("message").value;
-	// alert(message);
-	document.postMessage(message);
+	window.postMessage(message);
+	alert(message);
 }
 </script>
