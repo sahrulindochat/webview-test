@@ -31,19 +31,23 @@ if (!isset($_SESSION['loggedin'])) {
 					<h3 style="margin-top: 0px;margin-bottom: 5px;">Message</h3>
 				</div>
 				<div>
-					<input style="margin-bottom: 15px;width: 89vw;height: 100px;" name="message" id="message" />
+					<input style="margin-bottom: 15px;width: 89vw;height: 100px;padding: 0 5px 70px;" name="message" id="message" />
 				</div>
-				<input type="button" value="Send Message">
+				<input type="button" value="Send Message" onclick="postData()">
 			</div>
 		</div>
 	</body>
 </html>
 <script>
 document.addEventListener("message", function(result) {
-	let resultData = JSON.parse(result.data)
-	// alert(resultData.type)
+	let resultData = JSON.parse(result.data);
 	if(resultData.type == 'message'){
 		document.getElementById("message").value = resultData.message;
 	}
 })
+
+function postData(){
+	let message = document.getElementById("message").value;
+	window.postMessage(message);
+}
 </script>
