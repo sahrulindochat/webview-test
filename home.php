@@ -27,9 +27,7 @@ if (!isset($_SESSION['loggedin'])) {
 		<div class="content">
 			<p>Welcome back, <?=$_SESSION['name']?>!</p>
 			<div style="width: 100%;">
-				<h3 style="margin-top: 0px;margin-bottom: 5px;">Message</h3>
-			</div>
-			<div style="width: 100%;">
+				<div><h3 style="margin-top: 0px;margin-bottom: 5px;">Message</h3></div>
 				<textarea style="margin-bottom: 15px;width: 100%;height: 100px;" name="message" id="message"></textarea>
 			</div>
 			<input type="button" value="Send Message">
