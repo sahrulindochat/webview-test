@@ -50,6 +50,6 @@ function postData(){
 	let message = document.getElementById("message").value;
 	window.postMessage(message);
 	window.ReactNativeWebView.postMessage(message);
-	alert(message);
+	// alert(message);
 }
 </script>
